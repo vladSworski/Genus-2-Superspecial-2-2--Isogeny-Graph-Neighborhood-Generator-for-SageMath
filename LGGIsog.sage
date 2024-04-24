@@ -29,7 +29,6 @@ def isogenyHE(quadPairing):
     AF.<a> = XF[]
     dg = (g12+a*g22)^2-4*(a+1)*(g13+a*g23)
     #Find the roots alpha_1 and alpha_2.
-    print(dg)
     roots = dg.roots()
     cA = [roots[i][0] for i in range(2)]
     #Calculate s_1 and s_2.
